@@ -1,0 +1,6 @@
+framework module Pods_TrainingVolumeManager {
+  umbrella header "Pods-TrainingVolumeManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

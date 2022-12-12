@@ -13,9 +13,12 @@
 		A1C184F62946253E009BF5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C184F42946253E009BF5E0 /* Main.storyboard */; };
 		A1C184F829462540009BF5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C184F729462540009BF5E0 /* Assets.xcassets */; };
 		A1C184FB29462540009BF5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C184F929462540009BF5E0 /* LaunchScreen.storyboard */; };
+		AD189BEA6F1BA7859A523EA6 /* Pods_TrainingVolumeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5796F551E6553A34E50C62E3 /* Pods_TrainingVolumeManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5796F551E6553A34E50C62E3 /* Pods_TrainingVolumeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingVolumeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802B31B01256244CC7B91DDD /* Pods-TrainingVolumeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingVolumeManager.release.xcconfig"; path = "Target Support Files/Pods-TrainingVolumeManager/Pods-TrainingVolumeManager.release.xcconfig"; sourceTree = "<group>"; };
 		A1C184EB2946253E009BF5E0 /* TrainingVolumeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingVolumeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C184EE2946253E009BF5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C184F02946253E009BF5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A1C184F729462540009BF5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C184FA29462540009BF5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C184FC29462540009BF5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94CA36CCE0035CE00A8B96F /* Pods-TrainingVolumeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingVolumeManager.debug.xcconfig"; path = "Target Support Files/Pods-TrainingVolumeManager/Pods-TrainingVolumeManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD189BEA6F1BA7859A523EA6 /* Pods_TrainingVolumeManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90ABA4804B2BE56CD62784DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D94CA36CCE0035CE00A8B96F /* Pods-TrainingVolumeManager.debug.xcconfig */,
+				802B31B01256244CC7B91DDD /* Pods-TrainingVolumeManager.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1C184E22946253E009BF5E0 = {
 			isa = PBXGroup;
 			children = (
 				A1C184ED2946253E009BF5E0 /* TrainingVolumeManager */,
 				A1C184EC2946253E009BF5E0 /* Products */,
+				90ABA4804B2BE56CD62784DC /* Pods */,
+				C9A1C494A26B6E242125CE0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = TrainingVolumeManager;
 			sourceTree = "<group>";
 		};
+		C9A1C494A26B6E242125CE0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5796F551E6553A34E50C62E3 /* Pods_TrainingVolumeManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1C184FF29462540009BF5E0 /* Build configuration list for PBXNativeTarget "TrainingVolumeManager" */;
 			buildPhases = (
+				FB2F0AC67144CB942DEC78F8 /* [CP] Check Pods Manifest.lock */,
 				A1C184E72946253E009BF5E0 /* Sources */,
 				A1C184E82946253E009BF5E0 /* Frameworks */,
 				A1C184E92946253E009BF5E0 /* Resources */,
+				7DB86808D7BC41E75D96D219 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DB86808D7BC41E75D96D219 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainingVolumeManager/Pods-TrainingVolumeManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainingVolumeManager/Pods-TrainingVolumeManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrainingVolumeManager/Pods-TrainingVolumeManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB2F0AC67144CB942DEC78F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainingVolumeManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1C184E72946253E009BF5E0 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A1C1850029462540009BF5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94CA36CCE0035CE00A8B96F /* Pods-TrainingVolumeManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		A1C1850129462540009BF5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802B31B01256244CC7B91DDD /* Pods-TrainingVolumeManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
